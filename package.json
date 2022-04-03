@@ -1,0 +1,22 @@
+{
+  "name": "weather-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rizkisiraj/weather-app-js.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rizkisiraj/weather-app-js/issues"
+  },
+  "homepage": "https://github.com/rizkisiraj/weather-app-js#readme",
+  "dependencies": {
+    "open-weather-icons": "^0.0.8"
+  }
+}
