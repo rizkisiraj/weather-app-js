@@ -8,9 +8,9 @@ const form = document.querySelector("form");
 const theCity = document.querySelector(".city");
 const weatherWrapper = document.querySelector(".weather-wrapper");
 
-window.addEventListener("DOMContentLoaded", () => {
-    showWeather("jakarta");
-})
+// window.addEventListener("DOMContentLoaded", () => {
+//     showWeather("jakarta");
+// })
 
 form.addEventListener("submit", (e)=> {
     e.preventDefault();
