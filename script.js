@@ -1,4 +1,4 @@
-const GEO_API = "http://api.openweathermap.org/geo/1.0/direct?appid=6c102539467abae7d838bbd06dece77b&q=";
+const GEO_API = "https://api.openweathermap.org/geo/1.0/direct?appid=6c102539467abae7d838bbd06dece77b&q=";
 const WEATHER_API = "https://api.openweathermap.org/data/2.5/weather?appid=6c102539467abae7d838bbd06dece77b&units=metric&";
 const cloudIcon = document.querySelector(".cloud-img");
 const degree = document.querySelector(".degree");
