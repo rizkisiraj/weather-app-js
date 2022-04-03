@@ -35,7 +35,7 @@ async function showWeather(input) {
     degree.innerHTML = Math.round(main.temp)+"°";
     cloudData.innerHTML = `<div class="humidity flex-data"><span>${main.humidity}</span><span>Humidity</span></div>
     <div class="visibility flex-data"><span>${visibility}</span><span>Visibility</span></div>
-    <div class="index flex-data"><span>${wind.speed}</span><span>Speed</span></div>`
+    <div class="index flex-data"><span>${wind.speed}</span><span>Speed</span></div>`;
 
     if (main.temp < 20) {
        weatherWrapper.classList.add("cold");
