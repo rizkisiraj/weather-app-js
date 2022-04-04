@@ -31,6 +31,7 @@ async function showWeather(input) {
         const data = await response.json();
         const city = data[0];
         const { lat,lon } = city;
+        const cityName = city.name;
 
         const cityResponse = await fetch(`https://api.openweathermap.org/data/2.5/weather?appid=6c102539467abae7d838bbd06dece77b&units=metric&lat=${lat}&lon=${lon}`);
         const cityData = await cityResponse.json();
@@ -41,8 +42,8 @@ async function showWeather(input) {
             textWrapper.innerHTML = `<h2 class="city">${name}</h2>
             <span class="degree" style="display: block;">${Math.round(main.temp)+"°"}</span>`
         } else {
-            textWrapper.innerHTML = `<h2 class="city">${input}</h2>
-            <span class="degree" style="display: block;">${Math.round(main.temp)+"°"}</span>`
+            textWrapper.innerHTML = `<h2 class="city">${cityName}</h2>
+            <span class="degree" style="display: block;">${Math.round(main.temp)+"°"}</span>`;
         }
         
         cloudIcon.innerHTML = `<i class="owi owi-${weather[0].icon}"></i>`;
