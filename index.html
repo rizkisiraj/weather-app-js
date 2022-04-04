@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather App | Rizki Siraj</title>
+    <link rel="shortcut icon" href="./softsiraj-logos_white.png" type="image/x-icon">
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/scss/open-weather-icons.css">
 </head>
@@ -17,21 +18,20 @@
         </section>
         <section class="weather-wrapper">
             <div class="text-wrapper">
-                <h2 class="city">Makkah Al Mukarromah</h2>
-                <span class="degree" style="display: block;">18°</span>
+                <div class="loading"></div><div class="loading1" style="margin-top: 28px;"></div>
             </div>
             <div class="weather-data">
                 <div class="cloud-img">
-                    <i class="owi owi-01d"></i>
+                    <i class="owi owi-50d"></i>
                 </div>
                 <div class="weather-title">
-                    <h1>Sunny</h1>
+                    <div class="loading"></div>
                 </div>
             </div>
             <div class="cloud-data">
-                <div class="humidity flex-data"><span>70%</span><span>Humidity</span></div>
-                <div class="visibility flex-data"><span>70%</span><span>Humidity</span></div>
-                <div class="index flex-data"><span>70%</span><span>Humidity</span></div>
+                <div class="humidity flex-data"><div class="loading"></div></div>
+                <div class="visibility flex-data"><div class="loading"></div></div>
+                <div class="index flex-data"><div class="loading"></div></div>
             </div>
         </section>
     </main>
