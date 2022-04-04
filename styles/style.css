@@ -76,8 +76,8 @@ main .weather-wrapper {
           align-items: center;
   color: white;
   background-image: linear-gradient(64.3deg, rgba(254, 122, 152, 0.81) 17.7%, #ffce86 64.7%, rgba(172, 253, 163, 0.64) 112.1%);
-  -webkit-transition: all .6s linear;
-  transition: all .6s linear;
+  -webkit-transition: background-image .5s ease-in-out;
+  transition: background-image .5s ease-in-out;
 }
 
 main .weather-wrapper.cold {
@@ -102,6 +102,15 @@ main .weather-wrapper .weather-data .cloud-img {
 main .weather-wrapper .weather-data .weather-title {
   text-transform: uppercase;
   letter-spacing: 2px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+main .weather-wrapper .weather-data .weather-title .loading {
+  width: 75px;
+  height: 24px;
+  background-color: white;
+  margin: 0 auto;
 }
 
 main .weather-wrapper .text-wrapper {
@@ -112,11 +121,26 @@ main .weather-wrapper .text-wrapper h2 {
   font-size: 2rem;
   font-weight: 300;
   text-align: center;
+  text-transform: capitalize;
 }
 
-main .weather-wrapper .text-wrapper span {
+main .weather-wrapper .text-wrapper .degree {
   font-size: 5rem;
   font-weight: 200;
+}
+
+main .weather-wrapper .text-wrapper .loading {
+  text-align: center;
+  width: 200px;
+  height: 20px;
+  background-color: white;
+}
+
+main .weather-wrapper .text-wrapper .loading1 {
+  text-align: center;
+  width: 200px;
+  height: 90px;
+  background-color: white;
 }
 
 main .weather-wrapper .cloud-data {
@@ -138,5 +162,11 @@ main .weather-wrapper .cloud-data .flex-data {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+main .weather-wrapper .cloud-data .loading {
+  width: 70px;
+  height: 42px;
+  background-color: white;
 }
 /*# sourceMappingURL=style.css.map */
