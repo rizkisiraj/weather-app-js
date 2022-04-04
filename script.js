@@ -32,24 +32,10 @@ async function showWeather(input) {
         const city = data[0];
         const { lat,lon } = city;
 
-<<<<<<< HEAD
         const cityResponse = await fetch(`https://api.openweathermap.org/data/2.5/weather?appid=6c102539467abae7d838bbd06dece77b&units=metric&lat=${lat}&lon=${lon}`);
         const cityData = await cityResponse.json();
         const { weather, main, visibility, wind, name } = cityData;
         console.log(name);
-=======
-    const cityResponse = await fetch(`https://api.openweathermap.org/data/2.5/weather?appid=6c102539467abae7d838bbd06dece77b&units=metric&lat=${lat}&lon=${lon}`);
-    const cityData = await cityResponse.json();
-    const { weather, main, visibility, wind, name } = cityData;
-    console.log(name);
-    theCity.innerHTML = name;
-    cloudIcon.innerHTML = `<i class="owi owi-${weather[0].icon}"></i>`;
-    weatherTitle.innerHTML = weather[0].description;
-    degree.innerHTML = Math.round(main.temp)+"°";
-    cloudData.innerHTML = `<div class="humidity flex-data"><span>${main.humidity}</span><span>Humidity</span></div>
-    <div class="visibility flex-data"><span>${visibility}</span><span>Visibility</span></div>
-    <div class="index flex-data"><span>${wind.speed}</span><span>Speed</span></div>`;
->>>>>>> b1cee365f3272aac8fbe6961e3cdaca37c8072ab
 
         if (name.toLowerCase() == input.toLowerCase()) {
             textWrapper.innerHTML = `<h2 class="city">${name}</h2>
@@ -77,7 +63,6 @@ async function showWeather(input) {
     
 }
 
-<<<<<<< HEAD
 function laoding() {
     textWrapper.innerHTML = `<div class="loading"></div><div class="loading1" style="margin-top: 28px;"></div>`
     cloudIcon.innerHTML = `<i class="owi owi-50d"></i>`;
@@ -86,7 +71,3 @@ function laoding() {
     <div class="index flex-data"><div class="loading"></div></div>`;
     weatherTitle.innerHTML = `<div class="loading"></div>`
 }
-=======
-
-}
->>>>>>> b1cee365f3272aac8fbe6961e3cdaca37c8072ab
